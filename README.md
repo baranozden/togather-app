@@ -22,7 +22,7 @@ Project group consists of:
 * Work products of each iteration can be found at related folders which are named as *v-iteration_number* (for example: *v1* for iteration 1)
 * A Quality Assurance Team is responsible for reviewing and sharing feedback about each iteration's output.
 * The QA Team findings will be shared in the repo and a table related to the last iterations findings could be found in the below section.
-* After implementing the QA findings, work products will be published under the folders which are named as *v-iteration_number.review_number* (for example: *v1.1* for iteration 1 review 1)
+* After implementing the QA findings, work products will be published under the folders which are named as *IterationnumberRevised* (for example: *Iteration1Revised* for iteration 1 revisions)
 
 ## Review Log (Iteration 1 Final)
 Below, related review notes are provided. For more information, please visit [*Iteration 1 Review*](./Iteration1Revised/docs/ToGather_REVIEW.docx)
