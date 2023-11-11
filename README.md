@@ -4,7 +4,7 @@ This application provides an **all-in-one solution** for managing professional a
 With ToGather, the productivity and social connectivity is ensured **without usage of numberless platforms**. 
 By seamlessly blending work commitments and social engagements, **every moment will be guaranteed to be captured**.
 
-For more information please visit the latest version of our [*vision document*](./v1.1/docs/vision.docx).
+For more information please visit the latest version of our [*vision document*](./Iteration1Revised/docs/vision.docx).
 
 ## Contributors
 This project is developed for IS502 course of Middle East Technical University Informatics MSc Program.
@@ -25,7 +25,7 @@ Project group consists of:
 * After implementing the QA findings, work products will be published under the folders which are named as *v-iteration_number.review_number* (for example: *v1.1* for iteration 1 review 1)
 
 ## Review Log (Iteration 1 Final)
-Below, related review notes are provided. For more information, please visit [*Iteration 1 Review*](./v1.1/docs/ToGather_REVIEW.docx)
+Below, related review notes are provided. For more information, please visit [*Iteration 1 Review*](./Iteration1Revised/docs/ToGather_REVIEW.docx)
 | No | Reviewed Material ID | Section                                                    | Error Type  | Importance | Explanation                                                                                                                                                                                                                                                                                                    | Correction Status | Correction Explanation                                                                                                                                                                                                                                   |
 |----|----------------------|------------------------------------------------------------|-------------|------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1  | G1                   | Header                                                     | 9           | Little     | In glossary.docx, versioning of documents is advised to be used to determine the timeline of documents.                                                                                                                                                                                                        | Closed            | Rev number is added as Rev 1.0 to the header of glossary document.                                                                                                                                                                                       |
@@ -62,7 +62,7 @@ Below, related review notes are provided. For more information, please visit [*I
 
 ## To-Do (Current: Iteration 2)
 Below, main milestones for the current iteration are given.  
-For more information, please visit [*iteration plan 2*](./v1.1/docs/iteration_plan_2.docx) and [*work items list*](./v1.1/docs/work_items_list.xls)
+For more information, please visit [*iteration plan 2*](./Iteration1Revised/docs/iteration_plan_2.docx) and [*work items list*](./Iteration1Revised/docs/work_items_list.xls)
 Milestone | Planned Date
 --------- | --------
 Iteration start | 07.11.2023
