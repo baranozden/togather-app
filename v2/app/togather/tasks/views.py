@@ -1,17 +1,12 @@
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
-from django.http import HttpResponse
 from .forms import TaskForm
 from .models import Task
 
 
 @login_required(login_url="/users/login")
-def main(request):
-    return HttpResponse("<h1>Welcome to ToGather</h1>")
-
-
-@login_required(login_url="/users/login")
 def show_tasks(request):
+    """Show tasks belonging to the related user"""
     user = request.user
     try:
         tasks = Task.objects.filter(user=user)
@@ -23,6 +18,7 @@ def show_tasks(request):
 
 @login_required(login_url="/users/login")
 def add_task(request):
+    """Add task to the db wrt creator user"""
     form = TaskForm()
 
     if request.method == "POST":
@@ -38,6 +34,7 @@ def add_task(request):
 
 @login_required(login_url="/users/login")
 def update_task(request, pk):
+    """Update selected (wrt primary key) task"""
     task = Task.objects.get(id=pk)
     form = TaskForm(instance=task)
 
@@ -53,6 +50,7 @@ def update_task(request, pk):
 
 @login_required(login_url="/users/login")
 def delete_task(request, pk):
+    """Delete selected (wrt primary key) task"""
     task = Task.objects.get(id=pk)
 
     if request.method == "POST":

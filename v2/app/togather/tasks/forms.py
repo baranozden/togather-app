@@ -7,3 +7,7 @@ class TaskForm(forms.ModelForm):
         model = Task
         # fields = "__all__"
         exclude = ("user",)
+        widgets = {
+            'start_date': forms.widgets.DateTimeInput(attrs={'type': 'datetime-local'}),
+            'end_date': forms.widgets.DateInput(attrs={'type': 'datetime-local'})
+        }
