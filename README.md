@@ -4,8 +4,7 @@ This application provides an **all-in-one solution** for managing professional a
 With ToGather, the productivity and social connectivity is ensured **without usage of numberless platforms**. 
 By seamlessly blending work commitments and social engagements, **every moment will be guaranteed to be captured**.
 
-Project demo link:
-(baranozden.pythonanywhere.com)
+### [Project demo](baranozden.pythonanywhere.com)
 
 For more information please visit the latest version of our [*vision document*](./Iteration1Revised/docs/vision.docx).
 
