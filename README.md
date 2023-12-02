@@ -26,8 +26,8 @@ Project group consists of:
 * The QA Team findings will be shared in the repo and a table related to the last iterations findings could be found in the below section.
 * After implementing the QA findings, work products will be published under the folders which are named as *IterationnumberRevised* (for example: *Iteration1Revised* for iteration 1 revisions)
 
-## Review Log (Iteration 1 Final)
-Below, related review notes are provided. For more information, please visit [*Iteration 1 Review*](./Iteration2Revised/docs/ToGather_Review.docx)
+## Review Log (Iteration 2 Final)
+Below, related review notes are provided. For more information, please visit [*Iteration 2 Review*](./Iteration2Revised/docs/ToGather_Review.docx)
 | No | Reviewed Material ID | Section                                          | Error Type                           | Importance | Explanation                                                                                                                                                                                                                                                                                                                     | Correction Status | Correction Explanation                                                                                                                                                                                                                |
 | -- | -------------------- | ------------------------------------------------ | ------------------------------------ | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1  | N                    | Iteration Plan 2                                 | Incomplete/Insufficient/Missing      | High       | Assessment against evaluation criteria, other concerns and deviation, and Work Items: Planned compared to actually completed parts are missing. Some of the evaluation criteria such as test results can be evaluated.                                                                                                          | Accepted          | Suggestion applied.                                                                                                                                                                                                                   |
@@ -63,7 +63,7 @@ Below, related review notes are provided. For more information, please visit [*I
 
 ## To-Do (Current: Iteration 3)
 Below, main milestones for the current iteration are given.  
-For more information, please visit [*iteration plan 2*](./Iteration2Revised/docs/iteration_plan_3.docx) and [*work items list*](./Iteration2Revised/docs/work_items_list.xls)
+For more information, please visit [*iteration plan 3*](./Iteration2Revised/docs/iteration_plan_3.docx) and [*work items list*](./Iteration2Revised/docs/work_items_list.xls)
 Milestone | Planned Date
 --------- | --------
 Iteration start | 28.11.2023
