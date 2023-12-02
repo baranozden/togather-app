@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ToGather</title>
+        <style>
+            body {
+                display: grid;
+                place-items: center;
+                font-family: Arial, sans-serif;
+            }
+
+            btns {
+                display: flex;
+            }
+
+            h1 {
+                color: #4338ca;
+                font-size: 60px;
+                margin-top: 150px;
+            }
+
+            p {
+                width: 850px;
+                font-size: 24px;
+                text-align: center;
+            }
+
+            a {
+                margin-right:20px;
+                font-size: 24px;
+                color: white;
+                background-color: black;
+                border-radius: 5px;
+                padding: 5px 10px 5px 10px;
+                text-decoration: none;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h1>Welcome to ToGather!</h1>
+        <p>ToGather is a next generation automated and intelligent social calendar application. This application provides an all-in-one solution for managing professional and social life with ease. </p>
+        <div class="btns">
+            <a href="{% url 'signup' %}">Signup</a>
+            <a href="{% url 'login' %}">Login</a>
+        </div>
+    </body>
+</html>

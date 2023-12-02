@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ToGather</title>
+        <style>
+            body {
+                display: grid;
+                place-items: center;
+                font-family: Arial, sans-serif;
+            }
+
+            form {
+                width: 250px;
+                place-items: center;
+            }
+
+            input {
+                width: 240px;
+                height: 30px;
+                color: black;
+                margin-bottom: 20px;
+            }
+
+            select {
+                width: 240px;
+                height: 30px;
+                color: black;
+                margin-bottom: 20px;
+            }
+
+            label {
+                color: #4f46e5;
+                font-weight: 600;
+            }
+
+            btns {
+                display: flex;
+            }
+
+            .button {
+                margin-top: 12px;
+                font-size: 18px;
+                color: white;
+                background-color: black;
+                border-radius: 5px;
+            }
+
+            .button:hover {
+                background-color:#002ead;
+                transition: 0.3s;
+            }
+
+            h1 {
+                color: #4338ca;
+                font-size: 60px;
+                margin-top: 150px;
+            }
+
+            h3 {
+                color: #4338ca;
+                font-size: 40px;
+                margin-top: 150px;
+            }
+
+            p {
+                width: 850px;
+                font-size: 24px;
+                text-align: center;
+            }
+
+            a {
+                margin-right:20px;
+                font-size: 24px;
+                color: white;
+                background-color: black;
+                border-radius: 5px;
+                padding: 5px 10px 5px 10px;
+                text-decoration: none;
+            }
+
+            a:hover {
+                background-color:#002ead !important;
+                transition: 0.3s;
+            }
+
+            .navbar {
+                display: flex;
+                margin-top: 2%;
+                margin-left: 70%;
+            }
+
+            .navbar > a {
+                background-color: white !important;
+                color: black;
+                font-size: 20px;
+            }
+
+            .navbar > a:hover {
+                color: #002ead;
+                transition: 0.3s;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h3>Add Task</h3>
+
+        <form method="POST" action="" enctype='multipart/form-data'>
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit" class="button" name="Update Task">
+        </form>
+    </body>
+</html>
