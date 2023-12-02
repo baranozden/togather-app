@@ -6,7 +6,7 @@ By seamlessly blending work commitments and social engagements, **every moment w
 
 ### [Project Demo URL](https://baranozden.pythonanywhere.com)
 
-For more information please visit the latest version of our [*vision document*](./Iteration1Revised/docs/vision.docx).
+For more information please visit the latest version of our [*vision document*](./Iteration2Revised/docs/vision.docx).
 
 ## Contributors
 This project is developed for IS502 course of Middle East Technical University Informatics MSc Program.
@@ -27,7 +27,7 @@ Project group consists of:
 * After implementing the QA findings, work products will be published under the folders which are named as *IterationnumberRevised* (for example: *Iteration1Revised* for iteration 1 revisions)
 
 ## Review Log (Iteration 1 Final)
-Below, related review notes are provided. For more information, please visit [*Iteration 1 Review*](./Iteration1Revised/docs/ToGather_REVIEW.docx)
+Below, related review notes are provided. For more information, please visit [*Iteration 1 Review*](./Iteration2Revised/docs/ToGather_Review.docx)
 | No | Reviewed Material ID | Section                                          | Error Type                           | Importance | Explanation                                                                                                                                                                                                                                                                                                                     | Correction Status | Correction Explanation                                                                                                                                                                                                                |
 | -- | -------------------- | ------------------------------------------------ | ------------------------------------ | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1  | N                    | Iteration Plan 2                                 | Incomplete/Insufficient/Missing      | High       | Assessment against evaluation criteria, other concerns and deviation, and Work Items: Planned compared to actually completed parts are missing. Some of the evaluation criteria such as test results can be evaluated.                                                                                                          | Accepted          | Suggestion applied.                                                                                                                                                                                                                   |
@@ -61,20 +61,19 @@ Below, related review notes are provided. For more information, please visit [*I
 | 29 | A                    | 5\. Decisions                                    | Spelling (grammar, punctuation, etc) | Little     | Original: "Load balancing and paralellism will be applied." Correction: "Load balancing and parallelism will be applied."                                                                                                                                                                                                       | Accepted          | Suggestion applied.                                                                                                                                                                                                                   |
 | 30 | S                    | 3.4. Supportability                              | Spelling (grammar, punctuation, etc) | Little     | Original: "There should be an isolated test environment apart from the production environment for mitigating security vulnerabilities and deploy bug fixes." Suggested: "There should be an isolated test environment apart from the production environment for mitigating security vulnerabilities and deploying bug fixes."   | Accepted          | Suggestion applied.                                                                                                                                                                                                                   |
 
-## To-Do (Current: Iteration 2)
+## To-Do (Current: Iteration 3)
 Below, main milestones for the current iteration are given.  
-For more information, please visit [*iteration plan 2*](./Iteration1Revised/docs/iteration_plan_2.docx) and [*work items list*](./Iteration1Revised/docs/work_items_list.xls)
+For more information, please visit [*iteration plan 2*](./Iteration2Revised/docs/iteration_plan_3.docx) and [*work items list*](./Iteration2Revised/docs/work_items_list.xls)
 Milestone | Planned Date
 --------- | --------
-Iteration start | 07.11.2023
-Finalizing the Research | 14.11.2023
-Initiating the Design of UI | 22.11.2023
-Initiating the Development of Frontend Features | 22.11.2023
-Initiating the Development of Backend Features | 22.11.2023
-Initiating the Design of the Database | 22.11.2023
-Testing the Developed Features | 24.11.2023
-Getting Feedback | 25.11.2023
-Finishing the Iteration | 25.11.2023
+Iteration start | 28.11.2023
+Finishing writing the related use cases for this iteration in fully-dressed format | 05.12.2023
+Finalize determining requirements | 07.12.2023
+Creating the core architectural design	| 10.12.2023
+Finishing development of the related use cases for this iteration in fully-dressed format | 14.12.2023
+Testing the Developed Features | 15.12.2023
+Finishing the Iteration	| 16.12.2023
+
 
 
 ## Technology & External Applications
