@@ -6,7 +6,7 @@ By seamlessly blending work commitments and social engagements, **every moment w
 
 ### [Project Demo URL](https://baranozden.pythonanywhere.com)
 
-For more information please visit the latest version of our [*vision document*](./Iteration2Revised/docs/vision.docx).
+For more information please visit the latest version of our [*vision document*](./v3/docs/vision.docx).
 
 ## Contributors
 This project is developed for IS502 course of Middle East Technical University Informatics MSc Program.
@@ -63,7 +63,7 @@ Below, related review notes are provided. For more information, please visit [*I
 
 ## To-Do (Current: Iteration 3)
 Below, main milestones for the current iteration are given.  
-For more information, please visit [*iteration plan 3*](./Iteration2Revised/docs/iteration_plan_3.docx) and [*work items list*](./Iteration2Revised/docs/work_items_list.xls)
+For more information, please visit [*iteration plan 3*](./v3/docs/iteration_plan_3.docx) and [*work items list*](./v3/docs/work_items_list.xls)
 Milestone | Planned Date
 --------- | --------
 Iteration start | 28.11.2023
