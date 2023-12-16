@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ToGather</title>
+        <style>
+            body {
+                display: grid;
+                place-items: center;
+                font-family: Arial, sans-serif;
+            }
+
+            .button-container {
+                width: 500px;
+                height: 30px;
+                display: grid;
+                place-items: center;
+            }
+
+            .button {
+                margin-top: 12px;
+                font-size: 18px;
+                width: 110px;
+                height: 30px;
+                color: white;
+                background-color: black;
+                border-radius: 5px;
+            }
+
+            .button:hover {
+                background-color:#002ead;
+                transition: 0.3s;
+            }
+
+            p {
+                width: 850px;
+                font-size: 24px;
+                text-align: center;
+                margin-top: 150px;
+            }
+
+            a {
+                margin-right:10px;
+                font-size: 18px;
+                color: white;
+                height: 30px;
+                background-color: black;
+                border-radius: 5px;
+                padding: 5px 25px 5px 25px;
+                text-decoration: none;
+            }
+
+            a:hover {
+                background-color:#002ead !important;
+                transition: 0.3s;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <p>
+            Are you sure you want to remove {{ friend.first_name }}
+            {{ friend.last_name }} (@ {{ friend.username }}) from your friends?
+        </p>
+        <div class="button-container">
+
+            <form method="POST" action="">
+                {% csrf_token %}
+                <a href="{% url 'show_friends' %}" >Cancel</a>
+                <input type="submit" class="button" name="Confirm">
+            </form>
+        </div>
+    </body>
+</html>

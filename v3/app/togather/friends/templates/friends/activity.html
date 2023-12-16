@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ToGather</title>
+        <style>
+            body {
+                display: grid;
+                place-items: center;
+                font-family: Arial, sans-serif;
+            }
+
+            form {
+                width: 250px;
+                place-items: center;
+            }
+
+            input {
+                width: 240px;
+                height: 30px;
+                color: black;
+                margin-bottom: 20px;
+            }
+
+            label {
+                color: #4f46e5;
+                font-weight: 600;
+            }
+
+            .btns {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                vertical-align: middle;
+            }
+
+            .button {
+                vertical-align: middle !important;
+                font-size: 18px;
+                color: white;
+                background-color: black;
+                border-radius: 5px;
+            }
+
+            .button:hover {
+                background-color:#002ead;
+                transition: 0.3s;
+            }
+
+            .special-button {
+                margin-top: 12px;
+                font-size: 18px;
+                background-color: white;
+                color: #002ead;
+            }
+
+            .special-button:hover {
+                color: #4338ca;
+                background-color: white !important;
+                transition: 0.3s;
+            }
+
+            .users-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                place-items: center;
+                width: 80%;
+            }
+
+            .activity-card {
+                display: flex;
+                border: 1px solid gray;
+                border-radius: 5px;
+                width: 70%;
+                height: 60px;
+                padding: 20px 20px 20px 20px;
+                margin-top: 20px;
+                margin-left: 10px;
+            }
+
+            img {
+                vertical-align: middle;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                margin-right:20px;
+            }
+
+            .user-url {
+                font-size: 18px;
+                text-align: left;
+                background-color: white;
+                color: #4338ca;
+                padding: 0 0 0 0;
+                margin-right: 8px;
+            }
+
+            .user-url:hover {
+                text-decoration: underline;
+                background-color: white !important;
+                transition: 0.7s;
+            }
+
+            .activity-card > p {
+                font-size: 18px;
+                text-align: left;
+                display: flex;
+            }
+
+            .activity-card > a {
+                margin-right:20px;
+                font-size: 18px;
+                color: white;
+                background-color: black;
+                border-radius: 5px;
+                padding: 5px 10px 5px 10px;
+                text-decoration: none;
+            }
+
+
+
+            h1 {
+                color: #4338ca;
+                font-size: 60px;
+                margin-top: 150px;
+            }
+
+            p {
+                width: 700px;
+                font-size: 24px;
+                text-align: center;
+            }
+
+            a {
+                margin-right:20px;
+                font-size: 24px;
+                color: white;
+                background-color: black;
+                border-radius: 5px;
+                padding: 5px 10px 5px 10px;
+                text-decoration: none;
+            }
+
+            a:hover {
+                background-color:#002ead !important;
+                transition: 0.3s;
+            }
+
+            .navbar {
+                display: flex;
+                margin-top: 2%;
+                margin-left: 70%;
+            }
+
+            .navbar > a {
+                background-color: white !important;
+                color: black;
+                font-size: 20px;
+            }
+
+            .navbar > a:hover {
+                color: #002ead;
+                transition: 0.3s;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="navbar">
+            <a href="{% url 'show_tasks' %}">Tasks</a>
+            <a href="{% url 'show_profile' %}">Profile</a>
+            <a href="{% url 'show_activities' %}">Activity</a>
+            <a href="{% url 'show_friends' %}">Friends</a>
+            <a href="{% url 'browse_profiles' %}">Browse</a>
+            <a href="{% url 'logout' %}">Logout</a>
+        </div>
+
+        <h1>Activity</h1>
+        {% if pendings %}
+            <div class="users-container">
+                {% for pending in pendings %}
+                    <div class="activity-card">
+                        <img src="{{ pending.picture.url }}" alt="profile-pic">
+                        <p>
+                            <a href="{% url 'show_other_profile' pending.id %}" class="user-url">
+                                {{ pending.user.first_name }} {{ pending.user.last_name }} (@ {{ pending.user.username }})
+                            </a> wants to be friend with you :)
+                        </p>
+                        <div class="btns">
+                            <a href="{% url 'accept_request' pending.user.username %}" class="button">Accept</a>
+                            <a href="{% url 'reject_request' pending.user.username %}" class="button">Reject</a>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+
+        {% else %}
+            <div>
+                <p>No new activities to show :(</p>
+            </div>
+        {% endif %}
+
+    </body>
+</html>
