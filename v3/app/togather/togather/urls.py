@@ -8,7 +8,8 @@ urlpatterns = [
     path('', include('landing.urls')),
     path('tasks/', include('tasks.urls')),
     path('users/', include('users.urls')),
-    path('friends/', include('friends.urls'))
+    path('friends/', include('friends.urls')),
+    path('communities/', include('communities.urls'))
 
 ]
 

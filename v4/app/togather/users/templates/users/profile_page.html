@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ToGather</title>
+        <style>
+            body {
+                display: grid;
+                place-items: center;
+                font-family: Arial, sans-serif;
+            }
+
+            form {
+                width: 250px;
+                place-items: center;
+            }
+
+            input {
+                width: 240px;
+                height: 30px;
+                color: black;
+                margin-bottom: 20px;
+            }
+
+            label {
+                color: #4f46e5;
+                font-weight: 600;
+            }
+
+            btns {
+                display: flex;
+            }
+
+            .button {
+                margin-top: 12px;
+                font-size: 18px;
+                color: white;
+                background-color: black;
+                border-radius: 5px;
+            }
+
+            .button:hover {
+                background-color:#002ead;
+                transition: 0.3s;
+            }
+
+            .task {
+                border: 1px solid gray;
+                border-radius: 5px;
+                width: 300px;
+                padding: 20px 20px 20px 20px;
+                margin-top: 20px;
+                margin-left: 10px;
+            }
+
+            .profile > p {
+                font-size: 18px;
+                text-align: left;
+            }
+
+            .profile-header {
+                display: flex;
+                align-items: center;
+                width: 800px;
+            }
+
+            .profile-header > h3 {
+                color: #4338ca;
+                font-size: 40px;
+                margin-right:20px;
+            }
+
+            .profile-header > p {
+                width: 200px;
+                text-align: left;
+            }
+
+            img {
+                vertical-align: middle;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                margin-right:20px;
+            }
+
+            h2 {
+                color: #4338ca;
+                font-size: 24px;
+                margin-top: 0px;
+            }
+
+            h3 {
+                color: #4338ca;
+                font-size: 40px;
+            }
+
+            p {
+                width: 850px;
+                font-size: 24px;
+                text-align: center;
+            }
+
+            a {
+                margin-right:20px;
+                font-size: 24px;
+                color: white;
+                background-color: black;
+                border-radius: 5px;
+                padding: 5px 10px 5px 10px;
+                text-decoration: none;
+            }
+
+            a:hover {
+                background-color:#002ead !important;
+                transition: 0.3s;
+            }
+
+            .navbar {
+                display: flex;
+                margin-top: 2%;
+                margin-left: 70%;
+            }
+
+            .navbar > a {
+                background-color: white !important;
+                color: black;
+                font-size: 20px;
+            }
+
+            .navbar > a:hover {
+                color: #002ead;
+                transition: 0.3s;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="navbar">
+            <a href="{% url 'show_tasks' %}">Tasks</a>
+            <a href="{% url 'show_profile' %}">Profile</a>
+            <a href="{% url 'show_activities' %}">Activity</a>
+            <a href="{% url 'show_friends' %}">Friends</a>
+            <a href="{% url 'browse_profiles' %}">Browse</a>
+            <a href="{% url 'logout' %}">Logout</a>
+        </div>
+
+        <div class="profile">
+            <div class="profile-header">
+                <img src="{{ profile.picture.url }}" alt="profile-pic">
+                <h3>{{ user.first_name }} {{ user.last_name }}</h3>
+                <p>@ {{ user.username }}</p>
+            </div>
+            <p>Bio: {{ profile.bio }}</p>
+            <p>Birth date: {{ profile.birth_date }}</p>
+            <p>Country: {{ profile.country }}</p>
+            <p>City: {{ profile.city }}</p>
+            <p>Interest: {{ profile.interest }}</p>
+            <a href="{% url 'set_profile' %}" class="button">Edit Profile</a>
+        </div>
+    </body>
+</html>

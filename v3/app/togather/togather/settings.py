@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-5e77^plgzw#p^00%3ece8l9nna)v!2%5wz=%w^x)t2h%20h2tr
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['baranozden.pythonanywhere.com']
+ALLOWED_HOSTS = ['baranozden.pythonanywhere.com', 'localhost']
 
 
 # Application definition
@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'users.apps.UsersConfig',
     'landing.apps.LandingConfig',
     'friends.apps.FriendsConfig',
+    'communities.apps.CommunitiesConfig'
 ]
 
 MIDDLEWARE = [
