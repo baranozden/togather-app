@@ -6,7 +6,7 @@ By seamlessly blending work commitments and social engagements, **every moment w
 
 ### [Project Demo URL](https://baranozden.pythonanywhere.com)
 
-For more information please visit the latest version of our [*vision document*](./Iteration3Revised/docs/vision.docx).
+For more information please visit the latest version of our [*vision document*](./Iteration3Revised/vision.docx).
 
 ## Contributors
 This project is developed for IS502 course of Middle East Technical University Informatics MSc Program.
@@ -27,7 +27,7 @@ Project group consists of:
 * After implementing the QA findings, work products will be published under the folders which are named as *IterationnumberRevised* (for example: *Iteration1Revised* for iteration 1 revisions)
 
 ## Review Log (Iteration 3 Final)
-Below, related review notes are provided. For more information, please visit [*Iteration 3 Review*](./Iteration3Revised/docs/ToGather_Review.docx)
+Below, related review notes are provided. For more information, please visit [*Iteration 3 Review*](./Iteration3Revised/ToGather_Review.docx)
 | No | Reviewed Material ID            | Section          | Error Type | Importance | Explanation                                                                                                                                                                                                                               | Correction Status | Correction Explanation                                                                                                                                                                 |
 | -- | ------------------------------- | ---------------- | ---------- | ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 1  | UC_Brief                        | 3                | 8          | Medium     | There are 19 use cases in total, but there are 11 use cases which are fully dressed.                                                                                                                                                      | Rejected          | Our plan is to write 11 use cases in fully-dressed style for Release 1.                                                                                                                |
@@ -69,7 +69,7 @@ Below, related review notes are provided. For more information, please visit [*I
 
 ## To-Do (Current: Iteration 4)
 Below, main milestones for the current iteration are given.  
-For more information, please visit [*iteration plan 4*](./Iteration3Revised/docs/iteration_plan_4.docx) and [*work items list*](./Iteration3Revised/docs/work_items_list.xls)
+For more information, please visit [*iteration plan 4*](./Iteration3Revised/iteration_plan_4.docx) and [*work items list*](./Iteration3Revised/work_items_list.xls)
 Milestone | Planned Date
 --------- | --------
 Iteration start | 19.12.2023
